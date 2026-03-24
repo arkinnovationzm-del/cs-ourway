@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-slate-900;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: dark; }
+}
+
+.glow {
+  text-shadow: 0 0 8px rgba(47, 106, 255, 0.75);
+}
+
+.animate-floaty {
+  animation: floaty 6s ease-in-out infinite;
+}
